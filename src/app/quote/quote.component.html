@@ -9,10 +9,17 @@
           <h5 id="{{i}}">{{quote.quoteTitle}}</h5>
           <hr>
           <div *ngIf='quote.showQuoteDescription'>
+            <button class="cal btn btn-success fa fa-thumbs-up" (click)="upVote()">Like</button>
+        
+          <button class="cal btn btn-danger fa fa-thumbs-down" (click)="downVote()">Dislike</button>
             <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
           </div>
           <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+        </div>
+
+        <div>
+          
         </div>
 
       </div>
@@ -22,8 +29,8 @@
     </div>
   </div>
   <!-- </ol> -->
-  <caption>Share this App link with Friends & Family for them to create their own quotes.
-    #Tell.A.Friend.To.Tell.A.Friend!</caption>
+  <p>Share this App link with Friends & Family for them to create their own quotes.
+    #Tell.A.Friend.To.Tell.A.Friend!</p>
 
 
 </div>
