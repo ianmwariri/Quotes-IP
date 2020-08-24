@@ -1,5 +1,6 @@
 export class Quote {
-    id: number;
-    quoteTitle: string;
-    quoteDescription: string;
+    showQuoteDescription: boolean;
+    constructor(public id: number, public quoteTitle: string, public quoteDescription: string){
+        this.showQuoteDescription=false;
+    }
 }

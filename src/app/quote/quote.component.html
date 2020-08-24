@@ -1,10 +1,11 @@
-<div>
-    <h1>Create your own Quotes...</h1>
-    <h3>At the click of a button</h3>
-    <ol>
-      <li *ngFor='let quote of quotes'>
-        {{quote.quoteTitle}}
-      </li>
-    </ol>
-    <p>Share this App link with Friends & Family for them to create their own quotes. #Tell.A.Friend.To.Tell.A.Friend!</p>
+<h1>Create your own Quotes...</h1>
+<h3>At the click of a button</h3>
+<hr>
+<ol>
+  <div *ngFor='let quote of quotes;let i = index'>
+    <li>{{quote.quoteTitle}}</li>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <app-quote-detail *ngIf='quote.showQuoteDescription' [quote]='quote'></app-quote-detail>
   </div>
+</ol>
+<p>Share this App link with Friends & Family for them to create their own quotes. #Tell.A.Friend.To.Tell.A.Friend!</p>

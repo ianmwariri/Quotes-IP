@@ -10,10 +10,14 @@ export class AppComponent {
   title = 'Quotes-IP';
   
   quotes:Quote[]=[
-    {id:1, quoteTitle:'You are on Mute.'},
-    {id:2, quoteTitle:'Man is what he wills himself to be.'},
-    {id:3, quoteTitle:'Liberties arent given, they are taken.'},
+    new Quote(1, 'You are on Mute.','Author: Ian, Submitted by: Mwariri, Votes: 7'),
+    new Quote(2, 'Man is what he wills himself to be.', 'Author: Albert, Submitted by: Liam, Votes: 700'),
+    new Quote(3, 'Liberties arent given, they are taken.', 'Author: Ford, Submitted by: Henry, Votes: 1000'),
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showQuoteDescription = !this.quotes[index].showQuoteDescription;
+  }
 
   constructor(){
     this.quotes = [, , ]
