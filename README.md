@@ -3,34 +3,36 @@
 #### By Ian Mwariri, Created on 21/08/2020.
 
 # Demo 
-Here is a link to the application: https://ianmwariri.github.io/Quotes-IP/
+The proposed application should be visible through this link: https://ianmwariri.github.io/Quotes-IP/
 
 ## Description
 The system will allow a user to:
--Create a new quote. 
--Delete a quote.
--Upvote or downvote a quote.
--See the number of upvotes and number of downvotes for each quote. 
+* Create a new quote. 
+* Delete a quote.
+* Upvote or downvote a quote.
+* See the number of upvotes and number of downvotes for each quote. 
 
 ## Setup/Installation Requirements
--Fork the repo.
--Create a new branch.
--Make the appropriate changes in the files.
--Add changes to refelect the chnages made.
--Commit your changes (git commit -m "Improve feature.).
--Push to the branch (git push origin improve-feature).
--Create a Pull Request.
+* Fork the repo.
+* Create a new branch.
+* Make the appropriate changes in the files.
+* Add changes to refelect the chnages made.
+* Commit your changes (git commit -m "Improve feature.).
+* Push to the branch (git push origin improve-feature).
+* Create a Pull Request.
 
 ## Known Bugs
--Upvote and DownVote are not functioning.
+* The Live Site is not functional, though all deployment steps have been followed; the PC of development prompted inevitable errors.
+* Upvote and DownVote are also not functioning.
+
 
 
 ## Technologies Used
--TypeScript
--HTML5
--JavaScript
--CSS
--Bootstrap
+* TypeScript
+* HTML5
+* JavaScript
+* CSS
+* Bootstrap
 
 
 ## Support and Contact Details
