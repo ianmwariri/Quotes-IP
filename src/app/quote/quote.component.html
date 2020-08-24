@@ -4,16 +4,21 @@
   <hr>
   <div class="row">
     <div class="col-md-6">
-     <!-- <ol> -->
-    <div *ngFor='let quote of quotes;let i = index'>
-      <li>{{quote.quoteTitle}}</li>
-      <button (click)='toggleDetails(i)'>Toggle Details</button>
-      <app-quote-detail *ngIf='quote.showQuoteDescription' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
-      </app-quote-detail>
+      <!-- <ol> -->
+      <div *ngFor='let quote of quotes;let i = index'>
+        <div>
+          <h4 id="{{i}}">{{quote.quoteTitle}}</h4>
+          <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
+        </div>
+        <div *ngIf='quote.showQuoteDescription'>
+          <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
 
+        </div>
+      </div>
     </div>
-    <!-- </ol> -->
-    <p>Share this App link with Friends & Family for them to create their own quotes. #Tell.A.Friend.To.Tell.A.Friend!
-    </p>
-
   </div>
+  <!-- </ol> -->
+  <p>Share this App link with Friends & Family for them to create their own quotes. #Tell.A.Friend.To.Tell.A.Friend!
+  </p>
+
+</div>
