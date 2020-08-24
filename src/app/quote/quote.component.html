@@ -3,7 +3,7 @@
 <hr>
 <ol>
   <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.quoteTitle}}</li>
+    <li>{{quote.quoteTitle}} (posted on {{quote.postedDate|date|uppercase}}).</li>
     <button (click)='toggleDetails(i)'>Toggle Details</button>
     <app-quote-detail *ngIf='quote.showQuoteDescription' [quote]='quote'></app-quote-detail>
   </div>
