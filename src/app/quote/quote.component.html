@@ -1,25 +1,27 @@
 <div class="container">
-  <h1>Create your own Quotes...</h1>
-  
+  <h1>Daily Quotes!</h1>
   <hr>
   <div class="row">
     <div class="col-md-6">
       <!-- <ol> -->
       <div *ngFor='let quote of quotes;let i = index'>
         <div>
-          <h5 id="{{i}}">{{quote.quoteTitle}}</h5><hr>
+          <h5 id="{{i}}">{{quote.quoteTitle}}</h5>
+          <hr>
           <div *ngIf='quote.showQuoteDescription'>
             <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
-  
+
           </div>
           <button (click)='toggleDetails(i)' class="btn btn-primary">Toggle Details</button>
         </div>
-       
+
       </div>
+      <app-quote-form></app-quote-form>
     </div>
   </div>
   <!-- </ol> -->
-  <caption>Share this App link with Friends & Family for them to create their own quotes. #Tell.A.Friend.To.Tell.A.Friend!</caption>
-  
+  <caption>Share this App link with Friends & Family for them to create their own quotes.
+    #Tell.A.Friend.To.Tell.A.Friend!</caption>
+
 
 </div>
