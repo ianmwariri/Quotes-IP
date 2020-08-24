@@ -3,31 +3,42 @@
     <hr>
     <form #quoteForm='ngForm'>
         <div class="form-group">
-  
+
             <label for="name">Quote:</label>
-            <textarea placeholder='Enclose your Quote in Quotation Marks: " "' required class="form-control" id="name" [(ngModel)]="newQuote.quoteTitle" name="name" #name='ngModel'></textarea>
-  
+            <textarea rows="4" placeholder='Enclose your Quote in Quotation Marks: " "' required class="form-control"
+                id="name" [(ngModel)]="newQuote.quoteTitle" name="quoteTitle" #quoteTitle='ngModel'></textarea>
+
             <!-- Display {{newQuote.quoteTitle}} -->
+            <div [hidden]="quoteTitle.valid || quoteTitle.pristine" class="alert alert-danger">
+                <p>A Quote is required</p>
+            </div>
         </div>
         <div class="form-group">
-  
+
             <label for="name">Author:</label>
-            <input placeholder="Who penned the quote?" type="text" required class="form-control" id="name">
-  
+            <input placeholder="Who penned the quote?" type="text" required class="form-control" id="name" [(ngModel)]="newQuote.quoteDescription" name="quoteDescription" #quoteDescription='ngModel'>
+            <div [hidden]="quoteDescription.valid || quoteDescription.pristine"  class="alert alert-danger">
+                <p>Author is required</p>
+            </div>
         </div>
 
         <div class="form-group">
-  
+
             <label for="name">Submitted By:</label>
-            <input placeholder="Your Name" type="text" required class="form-control" id="name" required>
-  
+            <input placeholder="Your Name" type="text" required class="form-control" id="name">
+            <!-- <div hidden class="alert alert-danger">
+                <p>Your Name/Alias is required</p>
+            </div> -->
         </div>
 
         <div class="form-group">
             <label for="complete">Date of Submission</label>
-            <input type='date' id="complete" required>
-  
+            <input type='date' id="complete" [(ngModel)]="newQuote.postedDate" name="postedDate"
+                #postedDate="ngModel" required>
+            <div [hidden]="postedDate.valid || postedDate.pristine" class="alert alert-danger">
+                <p>Date is required</p>
+            </div>
         </div>
         <button type="submit" class="btn btn-success">Add Quote</button>
     </form>
-  </div>
+</div>
