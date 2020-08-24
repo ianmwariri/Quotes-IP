@@ -3,17 +3,14 @@
 #### By Ian Mwariri, Created on 21/08/2020.
 
 # Demo 
-Here is a working live demo: 
+Here is a link to the application: https://ianmwariri.github.io/Quotes-IP/
 
 ## Description
 The system will allow a user to:
--Create a new quote.
--Upvote or downvote a quote. 
+-Create a new quote. 
 -Delete a quote.
+-Upvote or downvote a quote.
 -See the number of upvotes and number of downvotes for each quote. 
-
-## Site
-
 
 ## Setup/Installation Requirements
 -Fork the repo.
@@ -25,9 +22,15 @@ The system will allow a user to:
 -Create a Pull Request.
 
 ## Known Bugs
+-Upvote and DownVote are not functioning.
 
 
 ## Technologies Used
+-TypeScript
+-HTML5
+-JavaScript
+-CSS
+-Bootstrap
 
 
 ## Support and Contact Details
