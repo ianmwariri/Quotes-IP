@@ -1,9 +1,9 @@
 # Quotes-I.P.
-#### This Application enables users to create quotes and have them voted on whether they are terrible or are inspirational.
+This Application enables users to create quotes and have them voted on whether they are terrible or are inspirational.
 #### By Ian Mwariri, Created on 21/08/2020.
 
 # Demo 
-The proposed application should be visible through this link: https://ianmwariri.github.io/Quotes-IP/
+Here is a working live demo: https://ianmwariri.github.io/Quotes-IP/
 
 ## Description
 The system will allow a user to:
@@ -22,10 +22,7 @@ The system will allow a user to:
 * Create a Pull Request.
 
 ## Known Bugs
-* The Live Site is not functional, though all deployment steps have been followed; the PC of development prompted inevitable errors.
 * Upvote and DownVote are also not functioning.
-
-
 
 ## Technologies Used
 * TypeScript
